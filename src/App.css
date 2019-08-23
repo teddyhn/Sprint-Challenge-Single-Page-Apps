@@ -1,0 +1,9 @@
+.character-list {
+  margin: auto;
+  max-width: 80%;
+}
+
+.character-list .card {
+  margin-bottom: 15px;
+}
+/*# sourceMappingURL=App.css.map */

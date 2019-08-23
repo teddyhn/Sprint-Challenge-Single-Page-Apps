@@ -1,5 +1,20 @@
 import React from "react";
 
-export default function CharacterCard() {
-  return <span>todo: character</span>;
+import Card from "react-bootstrap/Card";
+
+export default function CharacterCard(props) {
+  return (
+    <Card>
+      <Card.Img variant="top" src={props.image} />
+      <Card.Body>
+        <Card.Title>{props.name}</Card.Title>
+        <Card.Text>
+          <span>{props.species}</span>
+          <span>{props.status}</span>
+          <p>{props.location.name}</p>
+          <p>{props.origin.name}</p>
+        </Card.Text>
+      </Card.Body>
+    </Card>
+  );
 }
