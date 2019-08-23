@@ -2,14 +2,14 @@ import React from "react";
 
 import Card from "react-bootstrap/Card";
 
-export default function LocationCard(props) {
+export default function EpisodeCard(props) {
   return (
     <Card>
       <Card.Body>
         <Card.Title>{props.name}</Card.Title>
         <Card.Text>
-          <span>{`${props.type} ${props.dimension}`}</span>
-          <p>{`Residents: ${props.residents}`}</p>
+            <p>{props.episode}</p>
+            <p>{props.air_date}</p>
         </Card.Text>
       </Card.Body>
     </Card>
