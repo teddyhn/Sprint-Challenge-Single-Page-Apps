@@ -11,8 +11,8 @@ export default function CharacterCard(props) {
         <Card.Text>
           <span>{props.species}</span>
           <span>{props.status}</span>
-          <p>{props.location.name}</p>
-          <p>{props.origin.name}</p>
+          <p>{props.location}</p>
+          <p>{props.origin}</p>
         </Card.Text>
       </Card.Body>
     </Card>

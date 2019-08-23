@@ -3,8 +3,6 @@ import axios from "axios";
 
 import CharacterCard from "./CharacterCard";
 
-import CardDeck from "react-bootstrap/CardDeck";
-
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
   const [characters, setCharacters] = useState([])
@@ -21,8 +19,6 @@ export default function CharacterList() {
         console.error('Server Error', error);
       });
   }, []);
-
-  console.log(characters);
 
   return (
     <section className="character-list grid-view">
