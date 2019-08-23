@@ -9,21 +9,23 @@ export default function TabNav() {
     return (
         <Nav variant="tabs" defaultActiveKey="/">
             <Nav.Item>
-                <Nav.Link href="/">Home Page</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link href="/character">
-                    <NavLink to="/character">Characters</NavLink>
+                <Nav.Link as={NavLink} to="/" exact>
+                    Home Page
                 </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link href="/location">
-                    <NavLink to="/location">Locations</NavLink>
+                <Nav.Link as={NavLink} to="/character">
+                    Characters
                 </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link href="/episode">
-                    <NavLink to="/episode">Episodes</NavLink>
+                <Nav.Link as={NavLink} to="/location">
+                    Locations
+                </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link as={NavLink} to="/episode">
+                    Episodes
                 </Nav.Link>
             </Nav.Item>
         </Nav>

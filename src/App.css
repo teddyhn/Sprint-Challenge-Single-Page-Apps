@@ -1,6 +1,6 @@
 .character-list {
   margin: auto;
-  max-width: 80%;
+  max-width: 90%;
   padding-top: 15px;
 }
 
@@ -8,14 +8,42 @@
   margin: 15px 0;
 }
 
+.character-list .card .card-title {
+  margin-bottom: 0;
+}
+
+.character-list .card .card-subtitle {
+  color: gray;
+  margin-bottom: 1em;
+}
+
+.episode-list {
+  margin: auto;
+  max-width: 90%;
+  padding-top: 15px;
+}
+
+.episode-list .card {
+  margin: 15px 0;
+  width: 40%;
+}
+
 .location-list {
   margin: auto;
-  max-width: 80%;
+  max-width: 90%;
   padding-top: 15px;
 }
 
 .location-list .card {
   margin: 15px 0;
   width: 40%;
+}
+
+.nav {
+  margin-top: 15px;
+}
+
+.welcome-page {
+  padding-top: 15px;
 }
 /*# sourceMappingURL=App.css.map */

@@ -9,10 +9,9 @@ export default function CharacterCard(props) {
       <Card.Body>
         <Card.Title>{props.name}</Card.Title>
         <Card.Text>
-          <span>{props.species}</span>
-          <span>{props.status}</span>
-          <p>{props.location}</p>
-          <p>{props.origin}</p>
+          <p className="card-subtitle">{`${props.species} ${props.status}`}</p>
+          <span>{`Location: ${props.location}`}</span>
+          <p>{`Origin: ${props.origin}`}</p>
         </Card.Text>
       </Card.Body>
     </Card>
